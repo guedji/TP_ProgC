@@ -1,0 +1,46 @@
+#include "operator.h"
+#include <stdio.h>
+
+/* Implémentation des fonctions */
+
+int somme(int a, int b) {
+    return a + b;
+}
+
+int difference(int a, int b) {
+    return a - b;
+}
+
+int produit(int a, int b) {
+    return a * b;
+}
+
+int quotient(int a, int b) {
+    if (b != 0)
+        return a / b;
+    else {
+        printf("Erreur : division par zero.\n");
+        return 0;
+    }
+}
+
+int modulo(int a, int b) {
+    if (b != 0)
+        return a % b;
+    else {
+        printf("Erreur : modulo par zero.\n");
+        return 0;
+    }
+}
+
+int et_bit(int a, int b) {
+    return a & b;
+}
+
+int ou_bit(int a, int b) {
+    return a | b;
+}
+
+int negation(int a) {
+    return ~a;
+}
